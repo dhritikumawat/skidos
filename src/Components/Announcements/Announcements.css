@@ -1,0 +1,140 @@
+.announcements_wrapper {
+  display: flex;
+  padding: 40px 70px;
+  justify-content: space-between;
+}
+.announcement_posts_list {
+  width: 73%;
+}
+.announcement_card {
+  border: 1px solid #e1e8f0;
+  box-shadow: 0px 0px 4px #e1e8f0;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.announcement_card h5 {
+  color: #96a4b9;
+  margin-bottom: 12px;
+}
+.announcement_tag {
+  background-color: #fbe6db;
+  color: #e47c2f;
+  padding: 3px;
+  font-size: 15px;
+  border-radius: 4px;
+  width: 150px;
+  margin: 3px 0px;
+  text-align: center;
+}
+.announcement_info {
+  margin: 15px 0px;
+  font-size: 17px;
+}
+.skidos_team {
+  margin: 20px 0px;
+}
+.feedback_wrapper {
+  display: flex;
+}
+.feedback_wrapper .emoji {
+  display: flex;
+  align-items: center;
+}
+.feedback_box_wrapper {
+  position: relative;
+  width: 95%;
+}
+.feedback_wrapper input {
+  width: 100%;
+  margin-left: 20px;
+  padding: 10px;
+  height: 35px;
+  border: 1px solid #e1e8f0;
+  box-shadow: 0px 0px 4px #e1e8f0;
+  font-size: 15px;
+  outline: none;
+}
+.feedback_wrapper input::placeholder {
+  color: #96a4b9;
+}
+.send_feedback {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 8px;
+  right: 0px;
+}
+.sidebar {
+  width: 25%;
+}
+.submit_announcement_wrapper button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar_items {
+  font-size: 15px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 19px 0px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar_items:hover {
+  background-color: #e2e8ef;
+}
+
+/* Media Queries starts */
+
+@media (min-width: 769px) and(max-width:1023px) {
+  .announcements_wrapper {
+    display: block;
+  }
+  .announcement_posts_list {
+    width: 73%;
+  }
+  .sidebar {
+    width: 25%;
+  }
+  .submit_announcement_wrapper button {
+    white-space: nowrap;
+  }
+  .sidebar_items {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sidebar_items:hover {
+    background-color: #e2e8ef;
+  }
+}
+
+@media (max-width: 768px) {
+  .announcements_wrapper {
+    flex-direction: column-reverse;
+    padding: 30px 30px;
+  }
+  .announcement_posts_list {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .submit_announcement_wrapper button {
+    width: 100%;
+  }
+}

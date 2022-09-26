@@ -1,0 +1,19 @@
+:root {
+  --body-default-color: #f7fafc;
+  --label-color: #000000;
+  --primary-color: #008aff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-default-color);
+  font-family: sans-serif;
+}
